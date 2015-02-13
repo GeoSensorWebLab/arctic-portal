@@ -53,6 +53,7 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  get "/pages/*id" => 'pages#show', as: :page, format: false
 
-  root to: "high_voltage/pages#show", id: "main"
+  root to: "pages#show", id: "main"
 end
