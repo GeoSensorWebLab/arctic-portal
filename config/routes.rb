@@ -53,6 +53,9 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  get '/auth/:provider/callback', to: 'sessions#create'
+  post '/auth/:provider/callback', to: 'sessions#create'
+
   get "/pages/*id" => 'pages#show', as: :page, format: false
 
   root to: "pages#show", id: "main"
