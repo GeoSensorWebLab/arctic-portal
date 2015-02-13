@@ -12,35 +12,61 @@ img {
   font-size: inherit;
   }
 
-// THESE ARE EXAMPLES YOU CAN MODIFY
-// create your own classes
-// to make views framework-neutral
-.column {
-  @extend .col-md-6;
-  @extend .text-center;
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+header,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.lead {
+  font-size: 1.3em !important;
+}
+
+header {
+  border-bottom: 1px solid #e5e5e5;
+}
+header h3 {
+  padding-bottom: 19px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
   }
-.form {
-  @extend .col-md-6;
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  header,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
   }
-.form-centered {
-  @extend .col-md-6;
-  @extend .text-center;
+  /* Space out the masthead */
+  header {
+    margin-bottom: 30px;
   }
-.submit {
-  @extend .btn;
-  @extend .btn-primary;
-  @extend .btn-lg;
-  }
-// apply styles to HTML elements
-// to make views framework-neutral
-main {
-  @extend .container;
-  background-color: #eee;
-  padding-bottom: 80px;
+}
+
+#map-example {
+  height: 300px;
   width: 100%;
-  margin-top: 51px; // accommodate the navbar
-  }
-section {
-  @extend .row;
-  margin-top: 20px;
-  }
+}
+
