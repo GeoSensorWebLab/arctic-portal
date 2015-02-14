@@ -1,8 +1,9 @@
 class SessionsController < ApplicationController
-  skip_before_filter :verify_authenticity_token
+  skip_before_action :verify_authenticity_token
+  protect_from_forgery except: :create
 
   def new
-    redirect_to '/auth/developer'
+    redirect_to '/auth/gitlab'
   end
 
   def create
