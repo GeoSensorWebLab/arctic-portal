@@ -4,10 +4,11 @@ L.Control.Text = L.Control.extend
   }
 
   initialize: (content, options) ->
-    this.content = content
+    @content = content
+    @container = L.DomUtil.create('div', 'text-control')
+    @container.innerHTML = @content
+
     L.Util.setOptions(this, options)
 
   onAdd: (map) ->
-      container = L.DomUtil.create('div', 'text-control')
-      container.innerHTML = this.content
-      container
+      @container

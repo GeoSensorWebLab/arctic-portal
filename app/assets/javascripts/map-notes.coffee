@@ -10,6 +10,7 @@ $(document).ready ->
   Autosize.enable()
   pMap = polarMap('xmap', permalink: false)
 
+  # Nav Control
   navigation = new L.Control.Text("<a href='/map_notes' class='btn btn-default'>Back</a>")
   pMap.map.addControl(navigation)
 
@@ -29,3 +30,19 @@ $(document).ready ->
     layer = e.layer
     drawnItems.addLayer(layer)
 
+  # Form Control
+  displayCommentForm = ->
+    $("#formControl").removeClass("hide")
+
+  $("#formControl .hideComments").on "click", ->
+    $("#formControl").addClass("hide")
+
+
+  formButton = new L.Control.Text("<button class='btn btn-default'>Comment</button>")
+  $(formButton.container).on 'click', (e) ->
+    displayCommentForm()
+  pMap.map.addControl(formButton)
+
+  # Serialization
+  window.serialize = ->
+    console.log drawnItems.toGeoJSON()

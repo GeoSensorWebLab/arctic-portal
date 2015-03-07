@@ -13,3 +13,28 @@ body {
 	width: 100%;
 	height: 100%;
 }
+
+#formControl {
+	position: fixed;
+	top: 0; left: 0; bottom: 0; right: 0;
+	margin: auto;
+	width: 60%;
+	height: 400px;
+	z-index: 1000;
+	background-color: #FFF;
+}
+
+#formControl h1 {
+	font-size: 14pt;
+}
+
+#comments {
+	width: 90%;
+	left: 1em;
+	right: 1em;
+	margin: 0 auto;
+}
+
+#formControl .buttons {
+	padding: 0 3em;
+}
