@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-md-12">
     <div class="pull-right">
-      <button class="btn btn-default">Report Map Comment/Correction</button>
+      <%= link_to "Report Map Comment/Correction", new_map_note_path, class: "btn btn-default" %>
       <% if signed_in? %>
       <%= link_to "Logout", session_path, method: :delete, class: "btn btn-default" %>
       <% else %>
