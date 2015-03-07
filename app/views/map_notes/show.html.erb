@@ -13,5 +13,5 @@
 </div>
 
 <script>
-  window.features = <%= raw @map_note.feature.to_json %>;
+  window.features = JSON.parse(<%= raw @map_note.feature.to_json.to_json %>);
 </script>
