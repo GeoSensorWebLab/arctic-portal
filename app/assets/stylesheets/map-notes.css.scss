@@ -1,0 +1,14 @@
+//= require 'leaflet/dist/leaflet.css'
+//= require 'polarmap/css/polarmap.css'
+
+body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
+#xmap {
+	width: 100%;
+	height: 100%;
+}

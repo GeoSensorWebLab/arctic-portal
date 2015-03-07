@@ -10,7 +10,7 @@ class MapNotesController < ApplicationController
   end
 
   def new
-    render layout: 'full_window'
+    render layout: 'map-notes'
   end
 
   def edit
