@@ -1,0 +1,10 @@
+{
+  "name": "arctic-portal",
+  "version": "1.0.0",
+  "dependencies": {
+    "polarmap": "~> 1.0.0"
+  },
+  "resolutions": {
+    "proj4": "2.3.3"
+  }
+}
