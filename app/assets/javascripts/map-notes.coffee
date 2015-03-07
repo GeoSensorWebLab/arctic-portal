@@ -5,6 +5,8 @@
 #= require 'polarmap/dist/polarmap-src.js'
 #= require 'autosize'
 #= require 'text-control'
+#= require 'editor'
+#= require 'viewer'
 
 $(document).ready ->
   Autosize.enable()
@@ -14,90 +16,9 @@ $(document).ready ->
   navigation = new L.Control.Text("<a href='/map_notes' class='btn btn-default'>Back</a>")
   pMap.map.addControl(navigation)
 
-  # Drawing Control
-  drawnItems = new L.FeatureGroup()
-  pMap.map.addLayer(drawnItems)
-
-  drawControl = new L.Control.Draw(
-    edit:
-      featureGroup: drawnItems
-  )
-  pMap.map.addControl(drawControl)
-
-  # Drawing Events
-  pMap.map.on 'draw:created', (e) ->
-    type = e.layerType
-    layer = e.layer
-    drawnItems.addLayer(layer)
-
-  # Form Control
-  displayCommentForm = ->
-    $("#formControl").removeClass("hide")
-
-  hideCommentForm = ->
-    $("#formControl").addClass("hide")
-
-  $("#formControl .hideComments").on "click", hideCommentForm
-
-  formButton = new L.Control.Text("<button class='btn btn-default'>Comment</button>")
-  $(formButton.container).on 'click', (e) ->
-    displayCommentForm()
-  pMap.map.addControl(formButton)
-
-  # Form Validation
-  validForm = ->
-    valid = true
-    errors = []
-
-    if ($("#comments").val() is "")
-      valid = false
-      errors.push("Please add a description of the issue to the comment box.")
-
-    if (drawnItems.toGeoJSON().features.length is 0)
-      valid = false
-      errors.push("Please add a map annotation (marker or shape) for the issue.")
-
-    displayErrors(errors)
-    valid
-
-  displayErrors = (errors) ->
-    for error in errors
-      $("#formErrors").append($("<p></p>").text(error))
-    true
-
-  # Form Submission
-  $("#formControl .submitMapNote").one "click", ->
-    prepareForm()
-
-  prepareForm = ->
-    $("#formControl .submitMapNote")
-    $("#formErrors").empty()
-
-    if (validForm())
-      sendFormData()
-      .done((data, code, response) ->
-        hideCommentForm()
-        window.location.href = response.getResponseHeader("Location")
-      )
-      .fail((response, code, message) ->
-        displayErrors(["I couldn't save your map note because of \"#{message}\"."])
-      )
-      .always(->
-        $("#formControl .submitMapNote").one "click", ->
-          prepareForm()
-      )
-
-  sendFormData = ->
-    comment = $("#comments").val()
-    features = drawnItems.toGeoJSON()
-    $.ajax(
-      type: "POST"
-      url: "/map_notes"
-      contentType: "application/json"
-      data: JSON.stringify(
-        map_note:
-          comment: comment
-          feature: JSON.stringify(features)
-      )
-      dataType: "json"
-    )
+  re = /new$/
+  if (re.test(window.location.href))
+    # Editing
+    loadEditor(pMap.map)
+  else
+    loadViewer(pMap.map)

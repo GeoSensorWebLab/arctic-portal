@@ -11,6 +11,8 @@ class MapNotesController < ApplicationController
   end
 
   def show
+    @map_note = @current_user.map_notes.find_by(id: params[:id])
+    respond_with(@map_note, layout: 'map-notes')
   end
 
   def new
