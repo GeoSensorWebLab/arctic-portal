@@ -29,12 +29,16 @@ body {
 }
 
 #comments {
-	width: 90%;
+	width: 100%;
 	left: 1em;
 	right: 1em;
 	margin: 0 auto;
 }
 
-#formControl .buttons {
-	padding: 0 3em;
+#formControl p {
+	margin: 0 3em;
+}
+
+#formErrors p {
+	background-color: #FAA;
 }

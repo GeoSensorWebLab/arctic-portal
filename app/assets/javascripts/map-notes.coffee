@@ -37,11 +37,42 @@ $(document).ready ->
   $("#formControl .hideComments").on "click", ->
     $("#formControl").addClass("hide")
 
-
   formButton = new L.Control.Text("<button class='btn btn-default'>Comment</button>")
   $(formButton.container).on 'click', (e) ->
     displayCommentForm()
   pMap.map.addControl(formButton)
+
+  # Form Validation
+  validForm = ->
+    valid = true
+    errors = []
+
+    if ($("#comments").val() is "")
+      valid = false
+      errors.push("Please add a description of the issue to the comment box.")
+
+    if (drawnItems.toGeoJSON().features.length is 0)
+      valid = false
+      errors.push("Please add a map annotation (marker or shape) for the issue.")
+
+    displayErrors(errors)
+    valid
+
+  displayErrors = (errors) ->
+    for error in errors
+      $("#formErrors").append($("<p></p>").text(error))
+    true
+
+  # Form Submission
+  $("#formControl .submitMapNote").on "click", ->
+    $("#formErrors").empty()
+
+    if (validForm())
+      sendFormData()
+
+  sendFormData = ->
+    comment = $("#comments").val()
+    features = drawnItems.toGeoJSON()
 
   # Serialization
   window.serialize = ->
