@@ -2,7 +2,8 @@
   "name": "arctic-portal",
   "version": "1.0.0",
   "dependencies": {
-    "polarmap": "~> 1.0.0"
+    "polarmap": "~> 1.0.0",
+    "leaflet-draw": "~> 0.2.3"
   },
   "resolutions": {
     "proj4": "2.3.3"
