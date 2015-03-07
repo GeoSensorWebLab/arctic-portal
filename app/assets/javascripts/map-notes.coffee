@@ -34,8 +34,10 @@ $(document).ready ->
   displayCommentForm = ->
     $("#formControl").removeClass("hide")
 
-  $("#formControl .hideComments").on "click", ->
+  hideCommentForm = ->
     $("#formControl").addClass("hide")
+
+  $("#formControl .hideComments").on "click", hideCommentForm
 
   formButton = new L.Control.Text("<button class='btn btn-default'>Comment</button>")
   $(formButton.container).on 'click', (e) ->
@@ -64,16 +66,25 @@ $(document).ready ->
     true
 
   # Form Submission
-  $("#formControl .submitMapNote").on "click", ->
+  $("#formControl .submitMapNote").one "click", ->
+    prepareForm()
+
+  prepareForm = ->
+    $("#formControl .submitMapNote")
     $("#formErrors").empty()
 
     if (validForm())
       sendFormData()
-      .done(->
-        console.log "success!", this, arguments
+      .done((data, code, response) ->
+        hideCommentForm()
+        window.location.href = response.getResponseHeader("Location")
       )
-      .fail(->
-        console.log "failure!", this, arguments
+      .fail((response, code, message) ->
+        displayErrors(["I couldn't save your map note because of \"#{message}\"."])
+      )
+      .always(->
+        $("#formControl .submitMapNote").one "click", ->
+          prepareForm()
       )
 
   sendFormData = ->
