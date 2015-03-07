@@ -69,11 +69,24 @@ $(document).ready ->
 
     if (validForm())
       sendFormData()
+      .done(->
+        console.log "success!", this, arguments
+      )
+      .fail(->
+        console.log "failure!", this, arguments
+      )
 
   sendFormData = ->
     comment = $("#comments").val()
     features = drawnItems.toGeoJSON()
-
-  # Serialization
-  window.serialize = ->
-    console.log drawnItems.toGeoJSON()
+    $.ajax(
+      type: "POST"
+      url: "/map_notes"
+      contentType: "application/json"
+      data: JSON.stringify(
+        map_note:
+          comment: comment
+          feature: JSON.stringify(features)
+      )
+      dataType: "json"
+    )
