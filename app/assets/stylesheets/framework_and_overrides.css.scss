@@ -27,14 +27,18 @@ header,
   font-size: 1.3em !important;
 }
 
-header {
-  border-bottom: 1px solid #e5e5e5;
-}
 header h3 {
-  padding-bottom: 19px;
   margin-top: 0;
   margin-bottom: 0;
   line-height: 40px;
+}
+
+header hr {
+  margin: 10px 0;
+}
+
+header > div {
+  padding: 1em 0;
 }
 
 .footer {
@@ -59,10 +63,6 @@ header h3 {
   .footer {
     padding-right: 0;
     padding-left: 0;
-  }
-  /* Space out the masthead */
-  header {
-    margin-bottom: 30px;
   }
 }
 
