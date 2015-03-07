@@ -1,1 +1,24 @@
 <h1>Your Map Notes</h1>
+
+<p>You have <%= pluralize @map_notes.count, "map  note" %>.</p>
+
+<p><%= link_to "Create a Note", new_map_note_path, class: "btn btn-primary" %></p>
+
+<table class="table">
+<tr>
+  <th>ID</th>
+  <th>Date Created</th>
+  <th>Comment</th>
+  <th>Resolution</th>
+  <th>View</th>
+</tr>
+<% for note in @map_notes %>
+<tr>
+  <td><%= note.id %></td>
+  <td><%= note.created_at %></td>
+  <td><%= note.comment %></td>
+  <td><%= note.resolved %></td>
+  <td><%= link_to "View", note, class: "btn btn-default" %></td>
+</tr>
+<% end %>
+</table>
