@@ -13,6 +13,7 @@ gem 'omniauth'
 gem 'omniauth-gitlab'
 gem 'omniauth-shibboleth'
 gem 'pg'
+gem 'responders'
 gem 'ruby-saml'
 gem 'sass-rails', '~> 5.0'
 gem 'therubyracer', platforms: :ruby
