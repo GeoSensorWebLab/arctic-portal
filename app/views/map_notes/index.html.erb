@@ -11,6 +11,7 @@
   <th>Comment</th>
   <th>Resolution</th>
   <th>View</th>
+  <th>Remove</th>
 </tr>
 <% for note in @map_notes %>
 <tr>
@@ -19,6 +20,7 @@
   <td><%= note.comment %></td>
   <td><%= note.resolved %></td>
   <td><%= link_to "View", note, class: "btn btn-default" %></td>
+  <td><%= link_to "Delete", note, method: :delete, class: "btn btn-danger", data: { confirm: "Are you sure?" } %></td>
 </tr>
 <% end %>
 </table>

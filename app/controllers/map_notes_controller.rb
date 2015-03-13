@@ -19,18 +19,15 @@ class MapNotesController < ApplicationController
     render layout: 'map-notes'
   end
 
-  def edit
-  end
-
   def create
     @map_note = @current_user.map_notes.create(map_note_params)
     respond_with(@map_note, location: -> { map_note_path(@map_note) })
   end
 
-  def update
-  end
-
   def destroy
+    @map_note = @current_user.map_notes.find_by(id: params[:id])
+    @map_note.destroy
+    redirect_to map_notes_path, notice: "Map note deleted."
   end
 
   private
