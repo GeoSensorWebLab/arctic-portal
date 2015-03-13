@@ -14,5 +14,5 @@
 
 <script>
   window.features = JSON.parse(<%= raw @map_note.feature.to_json.to_json %>);
-  window.returnPath = "<%= map_notes_path %>";
+  window.returnPath = "<%= admin_map_notes_path %>";
 </script>
