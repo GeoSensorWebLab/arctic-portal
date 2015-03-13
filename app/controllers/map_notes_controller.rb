@@ -41,7 +41,7 @@ class MapNotesController < ApplicationController
 
   def require_login
     if !signed_in?
-      redirect_to root_path, error: "Login required"
+      redirect_to root_path, alert: "Please login to use that feature."
     end
   end
 end
