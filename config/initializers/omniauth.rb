@@ -1,4 +1,8 @@
+require 'openid/store/filesystem'
+
 Rails.application.config.middleware.use OmniAuth::Builder do
+  provider :openid,
+           store: OpenID::Store::Filesystem.new('tmp/store')
   provider :developer unless Rails.env.production?
   provider :gitlab, ENV['GITLAB_KEY'], ENV['GITLAB_SECRET'],
     client_options: {
