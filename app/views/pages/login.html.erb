@@ -1,0 +1,38 @@
+<div class="row">
+  <div class="col-md-12">
+    <h1>Arctic Connect Portal Login</h1>
+
+    <p>
+      You can login using any of the providers listed below.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <p>
+      <%= link_to "Login via OpenID", "/auth/open_id" %>
+    </p>
+  </div>
+</div>
+
+<% if Rails.env == "development" %>
+<div class="row">
+  <div class="col-md-12">
+    <h3>Developer Login Options</h3>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <p>
+      <%= link_to "Login via GSW Gitlab", "/auth/gitlab" %>
+    </p>
+  </div>
+  <div class="col-md-4">
+    <p>
+      <%= link_to "Login via Developer access", "/auth/developer" %>
+    </p>
+  </div>
+</div>
+<% end %>
