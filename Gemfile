@@ -4,6 +4,8 @@ ruby "2.2.0"
 
 gem 'rails', '4.2.0'
 
+gem 'dotenv-rails'
+
 gem 'bootstrap-sass'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'high_voltage'
@@ -16,7 +18,13 @@ gem 'omniauth-openid'
 gem 'omniauth-shibboleth'
 gem 'paranoia', '~> 2.0'
 gem 'pg'
+gem 'rack-cache'
+gem 'rails_serve_static_assets'
 gem 'rb-readline'
+gem 'redis'
+gem 'redis-namespace'
+gem 'redis-rack-cache'
+gem 'redis-rails'
 gem 'responders'
 gem 'ruby-saml'
 gem 'sass-rails', '~> 5.0'
