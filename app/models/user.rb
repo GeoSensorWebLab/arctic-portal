@@ -3,6 +3,6 @@ class User < ActiveRecord::Base
   has_many :map_notes, inverse_of: :user
 
   def self.create_from_hash!(hash)
-    create(identity: hash['info']['name'])
+    create(identity: hash['info']['name'], email: hash['info']['email'])
   end
 end
