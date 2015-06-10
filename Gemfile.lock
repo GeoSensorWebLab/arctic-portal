@@ -108,6 +108,10 @@ GEM
     omniauth (1.2.2)
       hashie (>= 1.2, < 4)
       rack (~> 1.0)
+    omniauth-browserid (0.0.1)
+      faraday
+      multi_json
+      omniauth (~> 1.0)
     omniauth-facebook (2.0.1)
       omniauth-oauth2 (~> 1.2)
     omniauth-gitlab (1.0.0)
@@ -258,6 +262,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   omniauth
+  omniauth-browserid
   omniauth-facebook
   omniauth-gitlab
   omniauth-google-oauth2
