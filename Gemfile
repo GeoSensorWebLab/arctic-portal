@@ -12,6 +12,7 @@ gem 'high_voltage'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
 gem 'omniauth'
+gem 'omniauth-facebook'
 gem 'omniauth-gitlab'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-openid'
@@ -40,4 +41,3 @@ group :development, :test do
   gem 'spring'
   gem 'web-console', '~> 2.0'
 end
-
