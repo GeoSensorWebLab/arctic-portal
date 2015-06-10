@@ -36,6 +36,9 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
+    airbrake (4.2.1)
+      builder
+      multi_json
     arel (6.0.0)
     autoprefixer-rails (5.1.5)
       execjs
@@ -256,6 +259,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  airbrake
   bootstrap-sass
   byebug
   coffee-rails (~> 4.1.0)

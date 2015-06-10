@@ -6,6 +6,7 @@ gem 'rails', '4.2.0'
 
 gem 'dotenv-rails'
 
+gem 'airbrake'
 gem 'bootstrap-sass'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'font-awesome-rails'
