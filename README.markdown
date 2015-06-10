@@ -1,8 +1,6 @@
 # Arctic Connect User Portal
 
-This app provides a centralized location to access all the Arctic Connect services. It also provides a central authentication service that connects to SAML2 authentication providers.
-
-It can be used for user access control or user tracking.
+This app provides a centralized location to access all the Arctic Connect services.
 
 ## Requirements
 
@@ -19,13 +17,65 @@ Use `rake` to initialize the testing database:
 
     $ rake db:create db:migrate
 
-## Tests
-
-No tests yet; will be rspec based when they are ready.
-
 ## Deployment
 
-To be added later.
+Deployment is currently set up for an instance of [Dokku](https://github.com/progrium/dokku) running on the [Cybera Rapid Access Cloud](http://www.cybera.ca/projects/cloud-resources/rapid-access-cloud/). When deploying, you will need to configure the following environment variables:
+
+    ADMIN_PASS
+    HTTP Auth password for /admin/map_notes.
+
+    ADMIN_USER
+    HTTP Auth username for /admin/map_notes.
+
+    DATABASE_URL
+    URL to postgres database with username, password, host, port, and database name.
+
+    ERRBIT_HOST
+    Hostname for the Errbit instance for error collection. Do not include protocol.
+
+    ERRBIT_KEY
+    Errbit app key.
+
+    ERRBIT_PORT
+    Port for the Errbit service.
+
+    FACEBOOK_KEY
+    The App Id for the Facebook App configured for OAuth login.
+
+    FACEBOOK_SECRET
+    The App Secret for the Facebook App configured for OAuth login.
+
+    GITLAB_KEY
+    The API Key for OAuth login via GeoSensorWeb Lab's Gitlab instance.
+
+    GITLAB_SECRET
+    The API Secret Key for OAuth login via GeoSensorWeb Lab's Gitlab instance.
+
+    GOOGLE_CLIENT_ID
+    The Google App ID for OAuth login.
+
+    GOOGLE_CLIENT_SECRET
+    The Google App Secret for OAuth login.
+
+    RACK_ENV
+    Environment for Rack. "production" is typical.
+
+    REDIS_NAMESPACE
+    Namespace for Redis cache. Should be unique.
+
+    REDIS_URL
+    URL to Redis instance. Can include username, password, host, database id.
+
+    SECRET_KEY_BASE
+    Key base for Rails session crypto.
+
+    TWITTER_KEY
+    The Twitter App Key for OAuth login.
+
+    TWITTER_SECRET
+    The Twitter App Secret for OAuth login.
+
+It should be possible to deploy the application to Heroku because of Heroku's similarity to Dokku.
 
 ## License
 
