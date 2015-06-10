@@ -11,30 +11,45 @@
 <div class="row">
   <div class="col-md-4">
     <p>
-      <%= link_to "Login via Facebook", "/auth/facebook" %>
+      <%= link_to "/auth/facebook", class: "btn btn-default col-xs-12" do %>
+      <i class="fa fa-facebook-official login"></i><br>
+      Login via Facebook
+      <% end %>
     </p>
   </div>
   <div class="col-md-4">
     <p>
-      <%= link_to "Login via Google", "/auth/google_oauth2" %>
+      <%= link_to "/auth/google_oauth2", class: "btn btn-default col-xs-12" do %>
+      <i class="fa fa-google login"></i><br>
+      Login via Google
+      <% end %>
     </p>
   </div>
   <div class="col-md-4">
     <p>
-      <%= link_to "Login via Twitter", "/auth/twitter" %>
+      <%= link_to "/auth/twitter", class: "btn btn-default col-xs-12" do %>
+      <i class="fa fa-twitter login"></i><br>
+      Login via Twitter
+      <% end %>
     </p>
   </div>
 </div>
 
-<div class="row">
+<div class="row m-t-lg">
   <div class="col-md-4">
     <p>
-      <%= link_to "Login via Browser ID", "/auth/browser_id" %>
+      <%= link_to "/auth/browser_id", class: "btn btn-default col-xs-12" do %>
+      <i class="fa fa-user login"></i><br>
+      Login via Mozilla Persona
+      <% end %>
     </p>
   </div>
   <div class="col-md-4">
     <p>
-      <%= link_to "Login via OpenID", "/auth/open_id" %>
+      <%= link_to "/auth/open_id", class: "btn btn-default col-xs-12" do %>
+      <i class="fa fa-openid login"></i><br>
+      Login via OpenID
+      <% end %>
     </p>
   </div>
 </div>
@@ -49,12 +64,18 @@
 <div class="row">
   <div class="col-md-4">
     <p>
-      <%= link_to "Login via GSW Gitlab", "/auth/gitlab" %>
+      <%= link_to "/auth/gitlab", class: "btn btn-default col-xs-12" do %>
+      <i class="fa fa-git login"></i><br>
+      Login via GSW Gitlab
+      <% end %>
     </p>
   </div>
   <div class="col-md-4">
     <p>
-      <%= link_to "Login via Developer access", "/auth/developer" %>
+      <%= link_to "/auth/developer", class: "btn btn-default col-xs-12" do %>
+      <i class="fa fa-wrench login"></i><br>
+      Login via Developer access
+      <% end %>
     </p>
   </div>
 </div>

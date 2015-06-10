@@ -8,6 +8,7 @@ gem 'dotenv-rails'
 
 gem 'bootstrap-sass'
 gem 'coffee-rails', '~> 4.1.0'
+gem 'font-awesome-rails'
 gem 'high_voltage'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
