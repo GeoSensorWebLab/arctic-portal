@@ -13,7 +13,7 @@ $(document).ready ->
   pMap = polarMap('xmap', permalink: false)
 
   # Nav Control
-  navigation = new L.Control.Text("<a href='#{window.returnPath}' class='btn btn-default'>Back</a>")
+  navigation = new L.Control.Text("<a href='/map_notes' class='btn btn-default'>Back</a>")
   pMap.map.addControl(navigation)
 
   re = /new$/
