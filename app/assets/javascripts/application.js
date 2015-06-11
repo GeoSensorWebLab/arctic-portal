@@ -15,3 +15,6 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require confirm_override
+//= require_self
+
+L.Icon.Default.imagePath = '/assets/images';
