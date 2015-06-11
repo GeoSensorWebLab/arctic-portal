@@ -9,6 +9,8 @@
 #= require 'viewer'
 
 $(document).ready ->
+  L.Icon.Default.imagePath = '/assets/images'
+
   Autosize.enable()
   pMap = polarMap('xmap', permalink: false)
 
