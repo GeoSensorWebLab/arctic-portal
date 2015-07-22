@@ -79,4 +79,8 @@ It should be possible to deploy the application to Heroku because of Heroku's si
 
 ## License
 
-Copyright GeoSensorWeb Lab 2015, All Rights Reserved.
+MIT License
+
+## Authors
+
+James Badger <jpbadger@ucalgary.ca>
