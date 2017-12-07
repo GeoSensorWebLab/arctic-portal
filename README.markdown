@@ -77,6 +77,17 @@ Deployment is currently set up for an instance of [Dokku](https://github.com/pro
 
 It should be possible to deploy the application to Heroku because of Heroku's similarity to Dokku.
 
+## V8/The Ruby Racer Notes
+
+It can be tricky to install the `libv8` and `therubyracer` gems, as they can fail if RubyGems or Bundler tries to use the system V8 instead of the one bundled with `libv8`. To solve this, try installing or updating using Bundler, which will fail due to compilation issues. Note down the versions of `libv8` and `therubyracer` that Bundler tried to install, and then install those gems manually:
+
+```
+$ gem install libv8 -v 'VERSION'
+$ gem install therubyracer -v 'VERSION'
+```
+
+Afterwards, Bundler will install or update gems correctly.
+
 ## License
 
 MIT License
