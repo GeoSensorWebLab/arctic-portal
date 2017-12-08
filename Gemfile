@@ -8,7 +8,7 @@ gem 'dotenv-rails',              '~> 2.0.2'
 
 gem 'airbrake',                  '~> 4.2.1'
 gem 'bootstrap-sass',            '~> 3.3.7'
-gem 'coffee-rails',              '~> 4.1.1'
+gem 'coffee-rails',              '~> 4.2.2'
 gem 'font-awesome-rails',        '~> 4.3.0.0'
 gem 'high_voltage',              '~> 2.2.1'
 gem 'jbuilder',                  '~> 2.2.16'

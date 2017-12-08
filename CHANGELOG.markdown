@@ -1,5 +1,9 @@
 # Changes
 
+## 2017-12-08
+
+* [coffee-rails from 4.1.1 to 4.2.2][coffee-rails]
+
 ## 2017-12-07
 
 * Upgraded Ruby from 2.2.0 to [2.2.8][Ruby 2.2.8]
