@@ -4,6 +4,7 @@
 
 * [coffee-rails from 4.1.1 to 4.2.2][coffee-rails]
 * [dotenv-rails from 2.0.2 to 2.2.1][dotenv-rails]
+* [font-awesome-rails from 4.3.0.0 to 4.7.0.0][font-awesome-rails]
 
 ## 2017-12-07
 
@@ -35,6 +36,7 @@
 [bootstrap-sass]: https://github.com/twbs/bootstrap-sass/blob/master/CHANGELOG.md
 [coffee-rails]: https://github.com/rails/coffee-rails/blob/master/CHANGELOG.md
 [dotenv-rails]: https://github.com/bkeepers/dotenv/blob/master/Changelog.md
+[font-awesome-rails]: https://github.com/bokmann/font-awesome-rails/blob/master/CHANGELOG.md
 [jquery-rails]: https://github.com/rails/jquery-rails/blob/master/CHANGELOG.md
 [omniauth-gitlab]: https://github.com/linchus/omniauth-gitlab
 [omniauth-google-oauth2]: https://github.com/zquestz/omniauth-google-oauth2/blob/master/CHANGELOG.md
