@@ -5,6 +5,14 @@
 * [coffee-rails from 4.1.1 to 4.2.2][coffee-rails]
 * [dotenv-rails from 2.0.2 to 2.2.1][dotenv-rails]
 * [font-awesome-rails from 4.3.0.0 to 4.7.0.0][font-awesome-rails]
+* [jquery-rails from 4.0.5 to 4.3.1][jquery-rails]
+* [omniauth from 1.2.2 to 1.7.1][omniauth]
+* [omniauth-google-oauth2 from 0.2.10 to 0.5.2][omniauth-google-oauth2]
+* [omniauth-shibboleth from 1.2.1 to 1.3.0][omniauth-shibboleth]
+* [omniauth-twitter from 1.2.1 to 1.4.0][omniauth-twitter]
+* [pg from 0.18.4 to 0.21.0][pg]
+* [redis-namespace from 1.5.3 to 1.6.0][redis-namespace]
+* [responders from 2.1.2 to 2.4.0][responders]
 
 ## 2017-12-07
 
@@ -56,3 +64,4 @@
 [ruby-saml]: https://github.com/onelogin/ruby-saml/blob/master/changelog.md
 [sass-rails]: https://github.com/rails/sass-rails
 [spring]: https://github.com/rails/spring/blob/master/CHANGELOG.md
+[omniauth]: https://github.com/omniauth/omniauth/wiki/Changelog
