@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.4.1'
 
-gem 'rails',                     '5.0.6'
+gem 'rails',                     '5.1.4'
 
 gem 'dotenv-rails',              '~> 2.2.1'
 
@@ -43,6 +43,7 @@ gem 'unicorn',                   '~> 5.3.1'
 
 group :development, :test do
   gem 'byebug',                  '~> 3.5.1'
+  gem 'listen',                  '~> 3.1.5'
   gem 'rails_layout',            '~> 1.0.24'
   gem 'spring',                  '~> 2.0.2'
   gem 'web-console',             '~> 3.5.1'

@@ -1,6 +1,6 @@
 class MapNotesController < ApplicationController
   protect_from_forgery except: :create
-  before_filter :require_login
+  before_action :require_login
 
   responders :flash
   respond_to :html, :json

@@ -33,6 +33,8 @@
 * [turbolinks from 2.5.3 to 5.0.1][turbolinks]
 * [ruby-saml from 0.9.2 to 1.6.0][ruby-saml]
 * [omniauth-facebook from 2.0.1 to 4.0.0][omniauth-facebook]
+* [Upgrade Rails to 5.1.4][Rails 5.1.4]
+* Add listen gem
 
 ## 2017-12-07
 
@@ -69,8 +71,8 @@
 [high_voltage]: https://github.com/thoughtbot/high_voltage/blob/master/NEWS.md
 [jbuilder]: https://github.com/rails/jbuilder/blob/master/CHANGELOG.md
 [jquery-rails]: https://github.com/rails/jquery-rails/blob/master/CHANGELOG.md
-[omniauth-gitlab]: https://github.com/linchus/omniauth-gitlab
 [omniauth-facebook]: https://github.com/mkdynamic/omniauth-facebook/blob/master/CHANGELOG.md
+[omniauth-gitlab]: https://github.com/linchus/omniauth-gitlab
 [omniauth-google-oauth2]: https://github.com/zquestz/omniauth-google-oauth2/blob/master/CHANGELOG.md
 [omniauth-shibboleth]: https://github.com/toyokazu/omniauth-shibboleth
 [omniauth-twitter]: https://github.com/arunagw/omniauth-twitter
@@ -80,6 +82,7 @@
 [rack-cache]: https://github.com/rtomayko/rack-cache/blob/master/CHANGES
 [Rails 4.2.10]: http://weblog.rubyonrails.org/2017/9/27/Rails-4-2-10-released/
 [Rails 5.0.6]: http://edgeguides.rubyonrails.org/upgrading_ruby_on_rails.html#upgrading-from-rails-4-2-to-rails-5-0
+[Rails 5.1.4]: http://weblog.rubyonrails.org/2017/9/7/Rails-5-1-4-and-5-0-6-released/
 [rails_layout]: https://github.com/RailsApps/rails_layout/blob/master/CHANGELOG.textile
 [rails_serve_static_assets]: https://github.com/heroku/rails_serve_static_assets/blob/master/CHANGELOG.md
 [rails_stdout_logging]: https://github.com/heroku/rails_stdout_logging
