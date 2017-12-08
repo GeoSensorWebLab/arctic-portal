@@ -13,10 +13,10 @@
 * [pg from 0.18.4 to 0.21.0][pg]
 * [redis-namespace from 1.5.3 to 1.6.0][redis-namespace]
 * [responders from 2.1.2 to 2.4.0][responders]
-* Upgrade Rails from 4.2.0 to 4.2.10
-* Upgrade Ruby from 2.2.8 to 2.3.4
-* Upgrade Bundler from 1.15.2 to 1.16.0
-* Upgrade Ruby from 2.3.4 to 2.4.1
+* [Upgrade Rails from 4.2.0 to 4.2.10][Rails 4.2.10]
+* [Upgrade Ruby from 2.2.8 to 2.3.4][Ruby 2.3.4]
+* [Upgrade Bundler from 1.15.2 to 1.16.0][Bundler 1.16.0]
+* [Upgrade Ruby from 2.3.4 to 2.4.1][Ruby 2.4.1]
 
 ## 2017-12-07
 
@@ -46,6 +46,7 @@
 
 
 [bootstrap-sass]: https://github.com/twbs/bootstrap-sass/blob/master/CHANGELOG.md
+[Bundler 1.16.0]: http://bundler.io/blog/2017/10/31/bundler-1-16.html
 [coffee-rails]: https://github.com/rails/coffee-rails/blob/master/CHANGELOG.md
 [dotenv-rails]: https://github.com/bkeepers/dotenv/blob/master/Changelog.md
 [font-awesome-rails]: https://github.com/bokmann/font-awesome-rails/blob/master/CHANGELOG.md
@@ -54,8 +55,10 @@
 [omniauth-google-oauth2]: https://github.com/zquestz/omniauth-google-oauth2/blob/master/CHANGELOG.md
 [omniauth-shibboleth]: https://github.com/toyokazu/omniauth-shibboleth
 [omniauth-twitter]: https://github.com/arunagw/omniauth-twitter
+[omniauth]: https://github.com/omniauth/omniauth/wiki/Changelog
 [pg]: https://bitbucket.org/ged/ruby-pg/src/eb13f3c529505f6daa3e0795bb81e4251e3a2bd2/History.rdoc?at=default&fileviewer=file-view-default
 [rack-cache]: https://github.com/rtomayko/rack-cache/blob/master/CHANGES
+[Rails 4.2.10]: http://weblog.rubyonrails.org/2017/9/27/Rails-4-2-10-released/
 [rails_layout]: https://github.com/RailsApps/rails_layout/blob/master/CHANGELOG.textile
 [rails_serve_static_assets]: https://github.com/heroku/rails_serve_static_assets/blob/master/CHANGELOG.md
 [rails_stdout_logging]: https://github.com/heroku/rails_stdout_logging
@@ -65,7 +68,8 @@
 [redis-rb]: https://github.com/redis/redis-rb/blob/master/CHANGELOG.md
 [responders]: https://github.com/plataformatec/responders/blob/master/CHANGELOG.md
 [Ruby 2.2.8]: https://www.ruby-lang.org/en/news/2017/09/14/ruby-2-2-8-released/
+[Ruby 2.3.4]: https://www.ruby-lang.org/en/news/2017/03/30/ruby-2-3-4-released/
+[Ruby 2.4.1]: https://www.ruby-lang.org/en/news/2017/03/22/ruby-2-4-1-released/
 [ruby-saml]: https://github.com/onelogin/ruby-saml/blob/master/changelog.md
 [sass-rails]: https://github.com/rails/sass-rails
 [spring]: https://github.com/rails/spring/blob/master/CHANGELOG.md
-[omniauth]: https://github.com/omniauth/omniauth/wiki/Changelog
