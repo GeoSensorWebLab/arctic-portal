@@ -3,6 +3,7 @@
 ## 2017-12-08
 
 * [coffee-rails from 4.1.1 to 4.2.2][coffee-rails]
+* [dotenv-rails from 2.0.2 to 2.2.1][dotenv-rails]
 
 ## 2017-12-07
 

@@ -4,7 +4,7 @@ ruby '2.2.8'
 
 gem 'rails',                     '4.2.0'
 
-gem 'dotenv-rails',              '~> 2.0.2'
+gem 'dotenv-rails',              '~> 2.2.1'
 
 gem 'airbrake',                  '~> 4.2.1'
 gem 'bootstrap-sass',            '~> 3.3.7'
