@@ -13,7 +13,9 @@
 * [pg from 0.18.4 to 0.21.0][pg]
 * [redis-namespace from 1.5.3 to 1.6.0][redis-namespace]
 * [responders from 2.1.2 to 2.4.0][responders]
-* Update Rails from 4.2.0 to 4.2.10
+* Upgrade Rails from 4.2.0 to 4.2.10
+* Upgrade Ruby from 2.2.8 to 2.3.4
+* Upgrade Bundler from 1.15.2 to 1.16.0
 
 ## 2017-12-07
 
