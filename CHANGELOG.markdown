@@ -16,6 +16,7 @@
 * Upgrade Rails from 4.2.0 to 4.2.10
 * Upgrade Ruby from 2.2.8 to 2.3.4
 * Upgrade Bundler from 1.15.2 to 1.16.0
+* Upgrade Ruby from 2.3.4 to 2.4.1
 
 ## 2017-12-07
 
