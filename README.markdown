@@ -4,8 +4,8 @@ This app provides a centralized location to access all the Arctic Connect servic
 
 ## Requirements
 
-* Ruby 2.2
-* Rails 4.2
+* Ruby 2.4
+* Rails 5.0.6
 
 ## Configuration
 
@@ -29,15 +29,6 @@ Deployment is currently set up for an instance of [Dokku](https://github.com/pro
 
     DATABASE_URL
     URL to postgres database with username, password, host, port, and database name.
-
-    ERRBIT_HOST
-    Hostname for the Errbit instance for error collection. Do not include protocol.
-
-    ERRBIT_KEY
-    Errbit app key.
-
-    ERRBIT_PORT
-    Port for the Errbit service.
 
     FACEBOOK_KEY
     The App Id for the Facebook App configured for OAuth login.

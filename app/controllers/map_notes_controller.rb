@@ -33,7 +33,7 @@ class MapNotesController < ApplicationController
   private
 
   def map_note_params
-    params.require(:map_note).permit(:comment, :feature)
+    params.require(:map_note).permit([:comment, :feature])
   end
 
   def require_login

@@ -1,4 +1,4 @@
-class Authorization < ActiveRecord::Base
+class Authorization < ApplicationRecord
   belongs_to :user, inverse_of: :authorizations
 
   validates_presence_of   :user_id, :uid, :provider

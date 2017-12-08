@@ -17,6 +17,22 @@
 * [Upgrade Ruby from 2.2.8 to 2.3.4][Ruby 2.3.4]
 * [Upgrade Bundler from 1.15.2 to 1.16.0][Bundler 1.16.0]
 * [Upgrade Ruby from 2.3.4 to 2.4.1][Ruby 2.4.1]
+* [Upgrade Rails from 4.2.10 to 5.0.6][Rails 5.0.6]
+* [paranoia from 2.1.5 to 2.4.0][paranoia]
+* [jbuilder from 2.2.16 to 2.7.0][jbuilder]
+* [redis-rails from 4.0.0 to 5.0.2][redis-rails]
+* [redis-rack-cache from 1.2.4 to unreleased 2.0.2 master branch][redis-rack-cache]
+* Downgrade Bundler to 1.15.4 to get better incompatible gem messages
+* [high_voltage to 3.0.0][high_voltage]
+* Drop airbrake and use other logging collectors on production servers
+* [redis from 3.2.2 to 4.0.1][redis-rb]
+* [spring from 1.3.6 to 2.0.2][spring]
+* [web-console from 2.3.0 to 3.5.1][web-console]
+* [unicorn from 4.9.0 to 5.3.1][unicorn]
+* [uglifier from 2.7.2 to 4.0.1][uglifier]
+* [turbolinks from 2.5.3 to 5.0.1][turbolinks]
+* [ruby-saml from 0.9.2 to 1.6.0][ruby-saml]
+* [omniauth-facebook from 2.0.1 to 4.0.0][omniauth-facebook]
 
 ## 2017-12-07
 
@@ -50,21 +66,27 @@
 [coffee-rails]: https://github.com/rails/coffee-rails/blob/master/CHANGELOG.md
 [dotenv-rails]: https://github.com/bkeepers/dotenv/blob/master/Changelog.md
 [font-awesome-rails]: https://github.com/bokmann/font-awesome-rails/blob/master/CHANGELOG.md
+[high_voltage]: https://github.com/thoughtbot/high_voltage/blob/master/NEWS.md
+[jbuilder]: https://github.com/rails/jbuilder/blob/master/CHANGELOG.md
 [jquery-rails]: https://github.com/rails/jquery-rails/blob/master/CHANGELOG.md
 [omniauth-gitlab]: https://github.com/linchus/omniauth-gitlab
+[omniauth-facebook]: https://github.com/mkdynamic/omniauth-facebook/blob/master/CHANGELOG.md
 [omniauth-google-oauth2]: https://github.com/zquestz/omniauth-google-oauth2/blob/master/CHANGELOG.md
 [omniauth-shibboleth]: https://github.com/toyokazu/omniauth-shibboleth
 [omniauth-twitter]: https://github.com/arunagw/omniauth-twitter
 [omniauth]: https://github.com/omniauth/omniauth/wiki/Changelog
+[paranoia]: https://github.com/rubysherpas/paranoia/blob/core/CHANGELOG.md
 [pg]: https://bitbucket.org/ged/ruby-pg/src/eb13f3c529505f6daa3e0795bb81e4251e3a2bd2/History.rdoc?at=default&fileviewer=file-view-default
 [rack-cache]: https://github.com/rtomayko/rack-cache/blob/master/CHANGES
 [Rails 4.2.10]: http://weblog.rubyonrails.org/2017/9/27/Rails-4-2-10-released/
+[Rails 5.0.6]: http://edgeguides.rubyonrails.org/upgrading_ruby_on_rails.html#upgrading-from-rails-4-2-to-rails-5-0
 [rails_layout]: https://github.com/RailsApps/rails_layout/blob/master/CHANGELOG.textile
 [rails_serve_static_assets]: https://github.com/heroku/rails_serve_static_assets/blob/master/CHANGELOG.md
 [rails_stdout_logging]: https://github.com/heroku/rails_stdout_logging
 [rb-readline]: https://github.com/ConnorAtherton/rb-readline/blob/master/CHANGES
 [redis-namespace]: https://github.com/resque/redis-namespace
 [redis-rack-cache]: https://github.com/redis-store/redis-rack-cache
+[redis-rails]: https://github.com/redis-store/redis-rails/blob/master/CHANGELOG.md
 [redis-rb]: https://github.com/redis/redis-rb/blob/master/CHANGELOG.md
 [responders]: https://github.com/plataformatec/responders/blob/master/CHANGELOG.md
 [Ruby 2.2.8]: https://www.ruby-lang.org/en/news/2017/09/14/ruby-2-2-8-released/
@@ -73,3 +95,7 @@
 [ruby-saml]: https://github.com/onelogin/ruby-saml/blob/master/changelog.md
 [sass-rails]: https://github.com/rails/sass-rails
 [spring]: https://github.com/rails/spring/blob/master/CHANGELOG.md
+[turbolinks]: https://github.com/turbolinks/turbolinks
+[uglifier]: https://github.com/lautis/uglifier/blob/master/CHANGELOG.md
+[unicorn]: https://bogomips.org/unicorn/NEWS.html
+[web-console]: https://github.com/rails/web-console/blob/master/CHANGELOG.markdown

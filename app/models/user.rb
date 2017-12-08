@@ -1,4 +1,4 @@
-class User < ActiveRecord::Base
+class User < ApplicationRecord
   has_many :authorizations, inverse_of: :user
   has_many :map_notes, inverse_of: :user
 
