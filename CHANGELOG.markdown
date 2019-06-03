@@ -1,5 +1,16 @@
 # Changes
 
+## 2019-06-03
+
+* Drop Redis caching usage
+* Upgrade to Ruby 2.6.3
+
+## 2018-08-23
+
+* Change domains used for app
+* Upgrade to PolarMap.js 1.2.1
+* Upgrade to Ruby 2.4.4
+
 ## 2017-12-08
 
 * [coffee-rails from 4.1.1 to 4.2.2][coffee-rails]
