@@ -27,12 +27,6 @@ gem 'rack-cache',                '~> 1.7.1'
 gem 'rails_serve_static_assets', '~> 0.0.5'
 gem 'rails_stdout_logging',      '~> 0.0.5'
 gem 'rb-readline',               '~> 0.5.5'
-gem 'redis',                     '~> 4.0.1'
-gem 'redis-namespace',           '~> 1.6.0'
-gem 'redis-rack-cache',
-  git: 'https://github.com/redis-store/redis-rack-cache.git',
-  ref: 'd1fdd3868bdc02efa5ae724a2758b3abfda271ab'
-gem 'redis-rails',               '~> 5.0.2'
 gem 'responders',                '~> 2.4.0'
 gem 'ruby-saml',                 '~> 1.6.0'
 gem 'sass-rails',                '~> 5.0.7'
