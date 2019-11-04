@@ -6,7 +6,7 @@ gem 'rails',                     '5.1.4'
 
 gem 'dotenv-rails',              '~> 2.2.1'
 
-gem 'bootstrap-sass',            '~> 3.3.7'
+gem 'bootstrap-sass',            '~> 3.4.1'
 gem 'coffee-rails',              '~> 4.2.2'
 gem 'font-awesome-rails',        '~> 4.7.0'
 gem 'high_voltage',              '~> 3.0.0'
