@@ -1,5 +1,20 @@
 # Changes
 
+## 2020-01-08
+
+* Update gems
+    * bower to 1.8.8
+    * dotenv-rails to 2.2.2
+    * font-awesome-rails to 4.7.0.5
+    * jquery-rails to 4.3.5
+    * omniauth-gitlab to 1.0.4
+    * omniauth-google-oauth2 to 0.5.4
+    * rails to 5.2.4.1
+    * sass to 3.7.4
+    * uglifier to 4.0.2
+* Upgrade to Ruby 2.7.0
+* Remove Rails 4 to 5 upgrade initializers for Rails 5.2 support
+
 ## 2019-06-03
 
 * Drop Redis caching usage
