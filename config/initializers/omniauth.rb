@@ -1,7 +1,6 @@
 require 'openid/store/filesystem'
 
 Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :browser_id
   provider :facebook, ENV['FACEBOOK_KEY'], ENV['FACEBOOK_SECRET']
   provider :openid,
            store: OpenID::Store::Filesystem.new('tmp/store')
