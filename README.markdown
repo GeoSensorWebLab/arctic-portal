@@ -39,12 +39,6 @@ The App Id for the Facebook App configured for OAuth login.
 FACEBOOK_SECRET
 The App Secret for the Facebook App configured for OAuth login.
 
-GITLAB_KEY
-The API Key for OAuth login via GeoSensorWeb Lab's Gitlab instance.
-
-GITLAB_SECRET
-The API Secret Key for OAuth login via GeoSensorWeb Lab's Gitlab instance.
-
 RACK_ENV
 Environment for Rack. "production" is typical.
 
