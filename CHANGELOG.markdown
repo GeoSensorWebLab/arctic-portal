@@ -1,5 +1,12 @@
 # Changes
 
+## 2021-06-04
+
+* Update gems
+* Remove Google login support
+* Remove GitLab login support
+* Remove BrowserID login support
+
 ## 2020-01-08
 
 * Update gems
