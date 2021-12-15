@@ -1,5 +1,9 @@
 # Changes
 
+## 2021-12-14
+
+* Convert to static site. original code remains on `rails5` branch
+
 ## 2021-06-04
 
 * Update gems
